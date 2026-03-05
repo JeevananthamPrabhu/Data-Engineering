@@ -1,0 +1,26 @@
+role_id,role_name,min_salary,max_salary
+1,HR Executive,25000,45000
+2,HR Manager,50000,90000
+3,Accountant,30000,60000
+4,Financial Analyst,45000,95000
+5,Software Engineer,40000,120000
+6,Senior Software Engineer,70000,150000
+7,Sales Executive,25000,70000
+8,Marketing Specialist,30000,80000
+9,Operations Manager,60000,160000
+10,Customer Support Executive,20000,50000
+11,Legal Advisor,50000,140000
+12,Procurement Officer,35000,85000
+13,QA Engineer,40000,100000
+14,Logistics Coordinator,30000,75000
+15,Data Analyst,45000,110000
+16,Training Manager,40000,95000
+17,PR Executive,30000,75000
+18,Product Manager,80000,180000
+19,Strategy Analyst,60000,150000
+20,Internal Auditor,50000,120000
+21,Compliance Officer,45000,110000
+22,Mechanical Engineer,50000,140000
+23,UI/UX Designer,40000,100000
+24,Data Scientist,80000,200000
+25,Cloud Engineer,70000,180000
