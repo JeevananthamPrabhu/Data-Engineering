@@ -1,0 +1,77 @@
+Generate Cluster ID (ONLY first time)
+bin/kafka-storage.sh random-uuid
+
+Format storage (ONLY first time)
+bin/kafka-storage.sh format \
+-t x1jxsNSTTkK9U5JCtzJhNw \
+-c config/server.properties \
+--standalone
+
+Start Kafka server 
+bin/kafka-server-start.sh config/server.properties
+
+Create topic
+bin/kafka-topics.sh --create \
+--topic test-topic \
+--bootstrap-server localhost:9092 \
+--partitions 1 \
+--replication-factor 1
+
+Start Producer
+bin/kafka-console-producer.sh \
+--topic test-topic \
+--bootstrap-server localhost:9092
+
+Start Consumer 
+bin/kafka-console-consumer.sh \
+--topic test-topic \
+--from-beginning \
+--bootstrap-server localhost:9092
+
+------------------------------------------------------------------------------
+
+
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+========================================
+
+bin/kafka-topics.sh --create \
+--topic streams-plaintext-input \
+--bootstrap-server localhost:9092 \
+--partitions 1 \
+--replication-factor 1
+
+=========================================
+
+bin/kafka-topics.sh --create \
+--topic streams-wordcount-output \
+--bootstrap-server localhost:9092 \
+--partitions 1 \
+--replication-factor 1
+===================================
+
+
+bin/kafka-console-producer.sh \
+--topic streams-plaintext-input \
+--bootstrap-server localhost:9092
+
+===================================
+
+bin/kafka-run-class.sh org.apache.kafka.streams.examples.wordcount.WordCountDemo \
+config/server.properties
+
+==================================
+
+bin/kafka-console-consumer.sh \
+--topic streams-wordcount-output \
+--from-beginning \
+--bootstrap-server localhost:9092 \
+--formatter-property print.key=true \
+--formatter-property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+======================================
+
+rm -rf /tmp/kafka-streams/streams-wordcount
+
+=====================================
+
+

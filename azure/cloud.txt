@@ -1,0 +1,263 @@
+Visualization:
+--------------
+
+High Cost
+Monthly Expense 
+Difficult to Scaling
+Maintenance
+
+Cloud Computing:
+----------------
+
+Cloud computing means Internet based Computing
+Renting IT Resources
+On-demand resources delivered to you over internet
+Cloud providers - Microsoft, Azure, Google
+Example - Gmail, Netflix, Dropbox
+Same Resource shared by multiple clients
+
+High availability 
+Fault tolerance
+Disaster Recovery
+
+User continue to access application, even when things go wrong
+Common reasons for loss availability:
+	Network outage
+	Application
+	System outage
+	Power outage
+	Catastrophic disaster 
+
+High availability and Fault Tolerance:
+--------------------------------------
+
+	Protect against data center, server, network and storage subsystems failures to keep your business running without downtime 
+ 	High availability systems are reliable in the sense that they continue operating even critical components fail
+	They are also resilient, meaning that they can simply handle failure without service disruption or data loss and seamlessly recovery form such failure
+	Azure provide high availability features such as redundancy
+
+SLA - Service Level Agreement
+
+Elasticity:
+----------
+
+Used to meet the sudden up and down in the workload for a small period
+
+Agility :
+---------
+
+Rapidly deploy and configure cloud resources as you app's needs change
+Speed and flexibility of scaling in the cloud
+
+Socially Global - Expand Globally
+
+SaaS - Use
+PaaS - Build
+IaaS - Move
+
+Free Services:
+--------------
+
+Virtual Network
+Azure Policy
+Azure Active Directory
+Azure Migrate
+Azure Open Datasets
+Azure Lighthouse
+Azure Private Link
+Azure Data Catalog
+Azure Service Fabric
+
+Pay: Time
+---------
+
+Charge based on time you use a particular service
+-Virtual Machine
+-App Services
+-SQL Database
+-Load Balancer
+
+Pay: GB
+-------
+
+-Database Storage
+-Storage Service
+-Network traffic
+
+Pay: Operation
+--------------
+
+Charges based on no of operations
+-Storage Services (read, write or delete operations)
+-Cosmo DB
+
+Pay: Execution
+--------------
+
+-Azure Function
+-Serverless Database
+-Login Apps
+
+Compute Services:
+-----------------
+
+-Azure Virtual Machines
+-Azure App services
+-Azure Container Instances
+-Azure Kubernetes Services
+-Azure Functions
+-Azure Virtual Desktop
+
+Azure Virtual Machine:
+---------------------
+
+Options to choose while creating VM:
+Type of image - OS and Software
+Size of VM - CPU/Ram/Storage
+Availability options
+
+Use cases:
+---------
+
+-During testing and Development
+-Application might need to handle fluctuations in demand
+	-shutting down VMs when you don't need them
+-During disaster Recovery
+-Move to the cloud with VM
+
+Load Balancer:
+--------------
+
+Distribute traffic to your backend virtual machines
+Provides high availability for your application
+Types
+-Public 
+-Private
+Components:
+Frontend IP: define IP address for the load balancer
+Backend pool : this contains the virtual machine
+Health probes : monitor health of resources in backend pool
+Rules : How to distribute the incoming traffic
+
+
+Azure Storage:
+--------------
+
+Cloud Storage to store the different types of data :
+
+-Files
+-Video
+-Audio
+-Databases
+-Logs
+
+Store the data in cloud access data anytime and anywhere
+
+Storage as a Service:
+--------------------
+
+Azure Storage is the part of the cloud infrastructure and supports:
+
+- Structured 
+- Unstructured 
+- Semi- structured
+
+Core Components:
+---------------
+
+1.BLOB(Binary Large Object Storage)
+2.File Storage
+3.Table Storage
+4.Queue Storage(communication between the applications)
+
+Azure SQL Database
+------------------
+
+Relational database service managed by Azure
+It uses the SQL Server engine, but Azure manages
+-Hardware
+-Updates
+-Backups
+-Security
+
+It is cloud-SQL database where you only focus on data, not infrastructure
+
+Service Models: PaaS
+--------------------
+
+Azure SQL Database follows Platform as a Service
++-------------------------------------------------------+
+|	you Manage	|	Azure Manages		|
++-------------------------------------------------------+
+|	Data 		|	Hardware		|		
+|	Tables		|	Os			|
+|	Queries 	|	Backup			|
+|	Users 		|	Security patches	|
++-------------------------------------------------------+
+
+
+Core Components:
+---------------
+
+1.Database
+2.Logical Server
+3.Compute+storage
+
+
+Azure Synapse:
+--------------
+
+Azure Synapse Analytics is a unified analytics service that combines:
+
+-Data Warehousing
+-Big Data Analytics
+-Data Integration
+
+Databricks:
+-----------
+
+Python
+SQL
+Scala
+R
+
+Distributed Computing:
+---------------------
+
+Processing a large dataset into a multiple machines to improve :
+
+-Speed
+-Scalability 
+-Fault tolerance
+
+Azure Cosmos DB:
+----------------
+
+It is fully managed NoSQL database
+
+Real-life Example:
+-----------------
+
+User data
+Orders 
+products catlog
+
+Needs:
+------
+
+Fast reads/writes
+Global access
+
+Key Features:
+------------
+
++-------------------------------+------
+|	Features		|
+|	Multi-model		|Supports JSON,key-value
+|	Global Distribution	|Data across regions
+|	Low Latency		|Millisecond response
+|	Auto Scalling		|Auto Traffic Handling
++--------------------
+
+
+
